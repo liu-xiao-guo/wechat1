@@ -29,6 +29,7 @@ parts:
     source-branch: production
     npm-run:
       - build:linux
+    install: cp -r dist $SNAPCRAFT_PART_INSTALL
     stage-packages:
       - libnss3
       - fontconfig-config
